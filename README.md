@@ -10,7 +10,7 @@ Was kann WebAI?
 - **Inspiration-URLs:** Orientiere dich an bestehenden Websites, indem du eine URL angibst, die die KI als Stilvorlage verwendet.
 - **Mehrsprachig:** Unterstützt Deutsch, Englisch, Französisch und Spanisch.
 
-## 📋 Voraussetzungen
+## Voraussetzungen
 
 Bevor du WebAI benutzt, stelle sicher, dass du folgende Software installiert hast:
 
@@ -19,23 +19,23 @@ Bevor du WebAI benutzt, stelle sicher, dass du folgende Software installiert has
 - **Mistral-Modell:** Das KI-Modell, das für die Generierung verwendet wird. Installiere es mit `ollama pull mistral`.
 - **Moderner Webbrowser:** Für die Benutzeroberfläche (z.B. Chrome, Firefox).
 
-## 🛠️ Installation und Setup
+## Installation und Setup
 
 1. **Repository klonen:**
    ```bash
-   git clone https://github.com/dein-username/siteforge.git
+   git clone https://github.com/Hannuta12/WebAI.git
    cd siteforge
    ```
 
 2. **Ollama einrichten:**
    - Installiere Ollama von [ollama.ai](https://ollama.ai).
-   - Starte Ollama: `ollama serve`
    - Installiere das Mistral-Modell: `ollama pull mistral`
+   - Starte Ollama: `ollama run mistral`
 
-3. **Projekt starten:**
+4. **Projekt starten:**
    - Öffne `index.html` in deinem Webbrowser. (Du kannst es direkt aus dem Datei-Explorer öffnen oder einen lokalen Server starten, z.B. mit Python: `python -m http.server 8000`)
 
-## 📖 Benutzung
+## Benutzung
 
 ### 1. Website-Struktur erstellen
 - Öffne `index.html` in deinem Browser.
@@ -66,7 +66,7 @@ Bevor du WebAI benutzt, stelle sicher, dass du folgende Software installiert has
 4. Generiere die Config und führe das Python-Skript aus.
 5. Voilà — deine Website ist fertig!
 
-## 📁 Projekt-Struktur
+## Projekt-Struktur
 
 ```
 siteforge/
@@ -77,25 +77,21 @@ siteforge/
 └── README.md           # Diese Anleitung
 ```
 
-## 🔧 Erweiterte Optionen
+## Erweiterte Optionen
 
 - **Interaktiver Modus:** Wenn du kein Config-File hast, führe `python generate.py` ohne Argumente aus und gib die Einstellungen manuell ein.
 - **Custom Output:** Ändere den Output-Pfad: `python generate.py config.json meine-website.html`
 - **KI-Anpassungen:** Bearbeite `generate.py`, um Temperatur, Modell oder Prompt anzupassen.
 
-## 🤝 Beitragen
-
-Beiträge sind willkommen! Forke das Repository, erstelle einen Branch für deine Änderungen und reiche einen Pull-Request ein. Für Bugs oder Feature-Requests öffne ein Issue.
-
-## 📄 Lizenz
+## Lizenz
 
 Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe [LICENSE](LICENSE) für Details.
 
-## ❓ Hilfe
+## Hilfe
 
 Falls du Probleme hast:
-- Stelle sicher, dass Ollama läuft (`ollama serve`).
+- Stelle sicher, dass Ollama läuft (`ollama run mistral`).
 - Überprüfe, ob Mistral installiert ist (`ollama list`).
 - Öffne die Browser-Konsole für Fehler in der UI.
 
-Viel Spaß beim Bauen deiner Websites mit SiteForge! 🚀
+Viel Spaß beim Bauen deiner Websites mit WebAI
