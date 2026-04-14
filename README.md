@@ -24,7 +24,7 @@ Bevor du WebAI benutzt, stelle sicher, dass du folgende Software installiert has
 1. **Repository klonen:**
    ```bash
    git clone https://github.com/Hannuta12/WebAI.git
-   cd siteforge
+   cd WebAI
    ```
 
 2. **Ollama einrichten:**
