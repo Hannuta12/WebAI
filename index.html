@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">SiteForge</span>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-ghost">Speichern</button>
+      <button class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        Live Preview
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+
+    <!-- LEFT SIDEBAR — Section Library -->
+    <aside class="sidebar sidebar-left">
+      <div class="sidebar-title">Sections</div>
+      <div class="search-box">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Suchen..." />
+      </div>
+
+      <div class="section-group">
+        <div class="section-group-label">Basics</div>
+        <div class="section-card" draggable="true" data-type="hero">
+          <div class="section-icon">🦸</div>
+          <div class="section-info">
+            <div class="section-name">Hero</div>
+            <div class="section-desc">Großer Einstieg mit Headline</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="kurz">
+          <div class="section-icon">💬</div>
+          <div class="section-info">
+            <div class="section-name">Kurze Beschreibung</div>
+            <div class="section-desc">1–2 Sätze, knackig</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="lang">
+          <div class="section-icon">📝</div>
+          <div class="section-info">
+            <div class="section-name">Lange Beschreibung</div>
+            <div class="section-desc">Text mit oder ohne Bilder</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="plaintext">
+          <div class="section-icon">📄</div>
+          <div class="section-info">
+            <div class="section-name">Plain Text</div>
+            <div class="section-desc">Reiner Fließtext</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-group">
+        <div class="section-group-label">Inhalte</div>
+        <div class="section-card" draggable="true" data-type="features">
+          <div class="section-icon">✨</div>
+          <div class="section-info">
+            <div class="section-name">Features</div>
+            <div class="section-desc">Vorteile & Highlights</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="leistungen">
+          <div class="section-icon">🛠️</div>
+          <div class="section-info">
+            <div class="section-name">Leistungen</div>
+            <div class="section-desc">Deine Services</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="stats">
+          <div class="section-icon">📊</div>
+          <div class="section-info">
+            <div class="section-name">Stats</div>
+            <div class="section-desc">Zahlen & Fakten</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="testimonials">
+          <div class="section-icon">⭐</div>
+          <div class="section-info">
+            <div class="section-name">Testimonials</div>
+            <div class="section-desc">Kundenstimmen</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="pricing">
+          <div class="section-icon">💰</div>
+          <div class="section-info">
+            <div class="section-name">Pricing</div>
+            <div class="section-desc">Preistabellen</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="team">
+          <div class="section-icon">👥</div>
+          <div class="section-info">
+            <div class="section-name">Team</div>
+            <div class="section-desc">Personen vorstellen</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="ueberuns">
+          <div class="section-icon">🏢</div>
+          <div class="section-info">
+            <div class="section-name">Über uns</div>
+            <div class="section-desc">Story & Mission</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-group">
+        <div class="section-group-label">Media</div>
+        <div class="section-card" draggable="true" data-type="bilder">
+          <div class="section-icon">🖼️</div>
+          <div class="section-info">
+            <div class="section-name">Bilder</div>
+            <div class="section-desc">Galerie oder Grid</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="video">
+          <div class="section-icon">🎬</div>
+          <div class="section-info">
+            <div class="section-name">Video</div>
+            <div class="section-desc">Embed oder Upload</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="blog">
+          <div class="section-icon">📰</div>
+          <div class="section-info">
+            <div class="section-name">Blog Einträge</div>
+            <div class="section-desc">Artikel & Posts</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-group">
+        <div class="section-group-label">Abschluss</div>
+        <div class="section-card" draggable="true" data-type="cta">
+          <div class="section-icon">🚀</div>
+          <div class="section-info">
+            <div class="section-name">CTA</div>
+            <div class="section-desc">Call to Action</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="impressum">
+          <div class="section-icon">⚖️</div>
+          <div class="section-info">
+            <div class="section-name">Impressum</div>
+            <div class="section-desc">Rechtliches</div>
+          </div>
+        </div>
+        <div class="section-card" draggable="true" data-type="footer">
+          <div class="section-icon">🔻</div>
+          <div class="section-info">
+            <div class="section-name">Footer</div>
+            <div class="section-desc">Links & Copyright</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CENTER — Canvas -->
+    <main class="canvas">
+      <div class="canvas-header">
+        <div class="canvas-title">Deine Seite</div>
+        <div class="canvas-hint">Sections aus der linken Sidebar ziehen oder klicken</div>
+      </div>
+
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-empty" id="dropEmpty">
+          <div class="drop-empty-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></svg>
+          </div>
+          <div class="drop-empty-text">Füge deine erste Section hinzu</div>
+          <div class="drop-empty-sub">Ziehe Sections hierher oder klicke auf eine Section links</div>
+        </div>
+      </div>
+
+      <div class="canvas-footer">
+        <button class="btn btn-primary btn-large" id="generateBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Website generieren
+        </button>
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR — Settings -->
+    <aside class="sidebar sidebar-right">
+      <div class="sidebar-title">Einstellungen</div>
+
+      <!-- Farbschema -->
+      <div class="settings-group">
+        <div class="settings-group-label">Farbschema</div>
+        <div class="color-presets">
+          <div class="color-preset active" data-preset="teal" title="Teal">
+            <div class="preset-swatch" style="background: #1cc7b8;"></div>
+            <div class="preset-swatch" style="background: #0f2f33;"></div>
+          </div>
+          <div class="color-preset" data-preset="blue" title="Blau">
+            <div class="preset-swatch" style="background: #3b82f6;"></div>
+            <div class="preset-swatch" style="background: #1e3a8a;"></div>
+          </div>
+          <div class="color-preset" data-preset="purple" title="Lila">
+            <div class="preset-swatch" style="background: #a855f7;"></div>
+            <div class="preset-swatch" style="background: #3b0764;"></div>
+          </div>
+          <div class="color-preset" data-preset="orange" title="Orange">
+            <div class="preset-swatch" style="background: #f97316;"></div>
+            <div class="preset-swatch" style="background: #431407;"></div>
+          </div>
+          <div class="color-preset" data-preset="custom" title="Custom">
+            <div class="preset-swatch" style="background: linear-gradient(135deg, #f3f6f5, #1cc7b8);"></div>
+            <div class="preset-label">+</div>
+          </div>
+        </div>
+        <div class="color-inputs">
+          <div class="color-input-row">
+            <label>Primär</label>
+            <div class="color-input-wrap">
+              <input type="color" value="#1cc7b8" id="colorPrimary" />
+              <input type="text" value="#1cc7b8" class="color-hex" />
+            </div>
+          </div>
+          <div class="color-input-row">
+            <label>Hintergrund</label>
+            <div class="color-input-wrap">
+              <input type="color" value="#f3f6f5" id="colorBg" />
+              <input type="text" value="#f3f6f5" class="color-hex" />
+            </div>
+          </div>
+          <div class="color-input-row">
+            <label>Dunkel</label>
+            <div class="color-input-wrap">
+              <input type="color" value="#0f2f33" id="colorDark" />
+              <input type="text" value="#0f2f33" class="color-hex" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formen -->
+      <div class="settings-group">
+        <div class="settings-group-label">Formen & Stil</div>
+        <div class="shape-options">
+          <button class="shape-btn active" data-shape="rounded">
+            <div class="shape-preview rounded-preview"></div>
+            <span>Abgerundet</span>
+          </button>
+          <button class="shape-btn" data-shape="sharp">
+            <div class="shape-preview sharp-preview"></div>
+            <span>Eckig</span>
+          </button>
+          <button class="shape-btn" data-shape="pill">
+            <div class="shape-preview pill-preview"></div>
+            <span>Pill</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Typografie -->
+      <div class="settings-group">
+        <div class="settings-group-label">Schrift</div>
+        <div class="select-wrap">
+          <select id="fontSelect">
+            <option value="system">System Font (Standard)</option>
+            <option value="inter">Inter</option>
+            <option value="playfair">Playfair Display</option>
+            <option value="space">Space Grotesk</option>
+            <option value="mono">JetBrains Mono</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Inspiration URL -->
+      <div class="settings-group">
+        <div class="settings-group-label">Inspiration Website</div>
+        <div class="input-wrap">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <input type="url" placeholder="https://example.com" id="inspirationUrl" />
+        </div>
+        <div class="input-hint">Die KI orientiert sich am Stil dieser Seite</div>
+      </div>
+
+      <!-- Prompt -->
+      <div class="settings-group">
+        <div class="settings-group-label">Beschreibung</div>
+        <textarea id="promptText" placeholder="Beschreibe dein Business, deine Marke oder was die Website vermitteln soll..."></textarea>
+      </div>
+
+      <!-- Sprache -->
+      <div class="settings-group">
+        <div class="settings-group-label">Sprache</div>
+        <div class="select-wrap">
+          <select id="langSelect">
+            <option value="de">Deutsch</option>
+            <option value="en">Englisch</option>
+            <option value="fr">Französisch</option>
+            <option value="es">Spanisch</option>
+          </select>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <script src="builder.js"></script>
+</body>
+</html>
